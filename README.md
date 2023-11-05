@@ -1,12 +1,28 @@
 # Leaflet_Challenge
-Assignment_15
-https://earthquake.usgs.gov/fdsnws/event/1/query.geojson?starttime=2022-7-05%2000:00:00&endtime=2023-11-01%2023:59:59&minmagnitude=4&orderby=time
+## Table of Contents
 
-Start_Time: 2022-07-05 00:00:00 UTC
-End_Time: 2023-11-01 23:59:59 UTC
-Accessed : 2023-11-01 18:35:00 UTC+8
-Magnitude: 4.0+
-Format: GeoJSON
-Site Location: World
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Earthquake Visualization](#earthquake-visualisation)
+- [Tectonic Plates](#tectonic-plates)
 
-![Screenshot 2023-11-01 184247](https://github.com/pkrachakonda/Leaflet_Challenge/assets/20739237/ca6e859e-e451-4498-b298-a2ae33c38e04)
+## Introduction
+
+This project focuses on *processing and transforming earthquake datasets* for visualisation using Leaflet package. The datasets were downloaded from USGS website as well as a Github source, in geojson format using API. It includes creating Basemaps, Markers and Overlays as well as tectonic plates lines. Each section below outlines the steps to create the respective item from the provided geojson/json datasets.
+
+## Prerequisites
+
+Before getting started with this project, make sure you have the following prerequisites:
+
+- Javascript  [https://developer.mozilla.org/en-US/docs/Web/JavaScript]
+- Leaflet and it's libraries [https://leafletjs.com/]
+- Basic understanding of html and webscrapping [https://docs.python-guide.org/scenarios/scrape/]
+- Basic understanding of D3 [https://d3js.org/]
+
+## Earthquake Visualization
+
+As a first step earthquake data starting from *18th July 2020* till *04th November 2023* with a *minimum magnitude of 4* was selected as query selection criteria. The resulting url [https://earthquake.usgs.gov/fdsnws/event/1/query.geojson?starttime=2022-07-18%2000:00:00&endtime=2023-11-04%2023:59:59&minmagnitude=4&orderby=time] is used to pull the data for the visualisation.
+Uisng D3, the url is converted into an *json* object and various *features* of the object were extracted to be used for data visualisation, such data markers based on earthquake magnitude and depth of epicentre. For each data point a *popup* with place name, earthquake magnitude, epicentre depth and time of occurence (with reference to AWST) were also created. Four types of maps (*Shaded, Grey, Street and Satellite*) were added in addition to *earthquake and tectnoic plates overlays*.
+
+## Tectonic Plates
+
