@@ -1,0 +1,44 @@
+/* remove default margin and padding from body */
+body {
+  padding:15;
+  margin: 15;
+  background-color: #f2f2f2;
+}
+
+h2 {
+    font-family: Calibri Bold;
+    color: #FF3860;
+    font-size: 20PX;
+}
+
+h3 {
+  font-family: Trebuchet MS;
+  color: #333030;
+  font-size: 16PX;
+}
+
+/* set map, body, and html to 100% of the screen size */
+#map,
+body,
+html {
+  height: 100%;
+}
+
+.legend {
+    line-height: 20px;
+    color: #333030;
+    background-color: #f2f2f2;
+    padding: 7px;
+    border-radius: 7px;
+}
+.legend i {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 14px;
+    opacity: 0.75;
+}
+
+.leaflet-bottom.leaflet-left{
+    width: 100%;
+  }
